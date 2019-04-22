@@ -5,7 +5,7 @@
 
 <div>
 
-  <span id="ask-editor-container" #editorContainer >
+  <span id="ask-editor-container" >
     <p-editor #AsEditor [(ngModel)]="text" [style]="{'height':'320px'}" (onInit)="onEditorInit()">
 
       <p-header>
@@ -57,15 +57,15 @@
 
   <div>
     <div class="ui-g-12 ui-fluid" >
-      <label for="new-test-plan-name-input" style="width: 100%">Add</label>
+      <label for="firstInput" style="width: 100%">Add</label>
       <input id="firstInput" type="text" [maxlength]="50" class="basic-input testPlanNameField"
              pInputText [(ngModel)]="newName" >
     </div>
     <div class="ui-g-12">
 
 
-      <span id="ask-editor-container" #editorContainer >
-        <p-editor #AsEditor [(ngModel)]="text" [style]="{'height':'320px'}" (onInit)="onEditorInit()">
+      <span>
+        <p-editor [(ngModel)]="text2" [style]="{'height':'320px'}" (onInit)="onEditorInit()">
 
             <p-header>
               <span class="ql-formats">
