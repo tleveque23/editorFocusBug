@@ -67,34 +67,37 @@
       <span id="ask-editor-container" #editorContainer >
         <p-editor #AsEditor [(ngModel)]="text" [style]="{'height':'320px'}" (onInit)="onEditorInit()">
 
-          <p-header>
-          <span class="ql-formats">
-            <button class="ql-bold" aria-label="Bold" tabindex="-1" ></button>
-            <button class="ql-italic" aria-label="Italic" tabindex="-1" ></button>
-            <button class="ql-underline" aria-label="Underline" tabindex="-1" ></button>
-          </span>
-          <span class="ql-formats">
-            <button class="ql-list" value="bullet" aria-label="Bullet List" tabindex="-1" ></button>
-            <button class="ql-list" value="ordered" aria-label="Ordered List" tabindex="-1" ></button>
-          </span>
+            <p-header>
+              <span class="ql-formats">
+                <button class="ql-bold" aria-label="Bold" tabindex="-1" ></button>
+                <button class="ql-italic" aria-label="Italic" tabindex="-1" ></button>
+                <button class="ql-underline" aria-label="Underline" tabindex="-1" ></button>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-list" value="bullet" aria-label="Bullet List" tabindex="-1" ></button>
+                <button class="ql-list" value="ordered" aria-label="Ordered List" tabindex="-1" ></button>
+              </span>
 
 
-          <span class="ql-formats">
-            <button class="ql-indent" value="-1" aria-label="Indent" tabindex="-1"  ></button>
-            <button class="ql-indent" value="+1" aria-label="Indent" tabindex="-1" ></button>
-          </span>
-          <span class="ql-formats">
-            <button class="ql-code-block" aria-label="Code" tabindex="-1" ></button>
-            <button class="ql-link" aria-label="Link" tabindex="-1" ></button>
-          </span>
-          <span class="ql-formats">
-              <button class="ql-clean" aria-label="Clear Formating" tabindex="-1" ></button>
-            </span>
-        </p-header>
+              <span class="ql-formats">
+                <button class="ql-indent" value="-1" aria-label="Indent" tabindex="-1"  ></button>
+                <button class="ql-indent" value="+1" aria-label="Indent" tabindex="-1" ></button>
+              </span>
+              <span class="ql-formats">
+                <button class="ql-code-block" aria-label="Code" tabindex="-1" ></button>
+                <button class="ql-link" aria-label="Link" tabindex="-1" ></button>
+              </span>
+              <span class="ql-formats">
+                  <button class="ql-clean" aria-label="Clear Formating" tabindex="-1" ></button>
+              </span>
+          </p-header>
 
         </p-editor>
-  </span>
+      </span>
 
+      <div>
+        <input type="text" pInputText />
+      </div>
 
     </div>
   </div>
